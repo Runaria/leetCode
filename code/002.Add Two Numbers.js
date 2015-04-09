@@ -30,3 +30,32 @@ var addTwoNumbers = function(l1, l2){
 	}
 	return out;
 };
+// version 2
+var addTwoNumbers = function(l1, l2){
+	var n1 = "",
+		n2 = "",
+		sum;
+	while(l1 || l2){
+		if(l1){
+			n1 = l1.val + n1;
+			l1 = l1.next;
+		}
+		if(l2){
+			n2 = l2.val + n2;
+			l2 = l2.next;
+		}
+	}
+	sum = ((parseInt(n1, 10) + parseInt(n2, 10))+"");
+	var x = sum.length,
+		prev, node, out;
+	while(--x>=0){
+		node = new ListNode(parseInt(sum[x],10));
+		if(prev){
+			prev.next = node;
+		}else{
+			out = node;
+		}
+		prev = node;
+	}
+	return out;
+}
