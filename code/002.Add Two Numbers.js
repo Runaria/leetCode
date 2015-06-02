@@ -8,6 +8,7 @@
  */
 var addTwoNumbers = function(l1, l2){
 	var sum = 0,
+		node,
 		out = node = new ListNode(0),
 		prev;
 	while(l1 || l2 || sum){
