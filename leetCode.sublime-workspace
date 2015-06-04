@@ -520,10 +520,29 @@
 	"buffers":
 	[
 		{
+			"contents": "/*\n    https://leetcode.com/problems/generate-parentheses/\n\n        Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\n\n        For example, given n = 3, a solution set is:\n\n        \"((()))\", \"(()())\", \"(())()\", \"()(())\", \"()()()\"\n\n */\n\n\n/**\n * @param {number} n\n * @return {string[]}\n */\n\n// from leetcode\nvar generateParenthesis = function(n) {\n    var out = [];\n    _generator(out, \"\", n, n);\n    return out;\n},\n_generator = function(out, str, left, right){\n    if(left){\n        _generator(out, str+\"(\", left-1, right)\n    }\n    if(right > left){\n        _generator(out, str+\")\", left, right-1)\n    }\n    if(!left && !right){\n        out.push(str);\n    }\n}",
 			"file": "code/022.Generate Parentheses.js",
+			"file_size": 875,
+			"file_write_time": 130778537749658238,
 			"settings":
 			{
-				"buffer_size": 1409,
+				"buffer_size": 713,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "code/023.Merge k Sorted Lists.js",
+			"settings":
+			{
+				"buffer_size": 3002,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.html",
+			"settings":
+			{
+				"buffer_size": 784,
 				"line_ending": "Windows"
 			}
 		}
@@ -531,9 +550,13 @@
 	"build_system": "Packages/User/javascript_nodeJs.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 196.0,
 		"selected_items":
 		[
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
 			[
 				"for",
 				"Format: Javascript"
@@ -553,10 +576,6 @@
 			[
 				"auto",
 				"Tag: Auto-Format Tags on Document"
-			],
-			[
-				"sshtml",
-				"Set Syntax: HTML"
 			],
 			[
 				"java",
@@ -1222,6 +1241,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lists",
 			"\"(()(()))\"",
 			"\"()()(())\"",
 			"\"((()))()\"",
@@ -1348,8 +1368,7 @@
 			"$1$2",
 			"fmt",
 			"idDate",
-			"validDate",
-			"isDateEdge"
+			"validDate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1495,7 +1514,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1503,15 +1522,15 @@
 					"file": "code/022.Generate Parentheses.js",
 					"settings":
 					{
-						"buffer_size": 1409,
+						"buffer_size": 713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								787,
-								787
+								673,
+								673
 							]
 						],
 						"settings":
@@ -1567,12 +1586,167 @@
 							],
 							"incomplete_sync": null,
 							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "code/023.Merge k Sorted Lists.js",
+					"settings":
+					{
+						"buffer_size": 3002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2018,
+								2018
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 607.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test.html",
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								572
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
