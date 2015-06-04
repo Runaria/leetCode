@@ -2,7 +2,13 @@
 	"folders":
 	[
 		{
-			"path": "code"
+			"path": "/E/work_project/GIT/leetCode"
+		},
+		{
+			"path": "/E/work_project/GIT/js-practice"
+		},
+		{
+			"path": "/E/work_project/GIT/react-demos"
 		}
 	]
 }

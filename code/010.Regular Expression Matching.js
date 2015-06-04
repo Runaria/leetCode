@@ -22,14 +22,6 @@
 
  */
 
-
-
-/*
-    version 1
-    failed:
-        can not match ["ab",".*.."]
-        this version cannot back trace more than 1 times;
- */
 var Machine = function(p) {
     var out = [],
         i = -1,
@@ -45,14 +37,15 @@ var Machine = function(p) {
             default:
                 j = out.push({
                     value: pattern,
+                    start: 0,
                     multi: false
                 }) - 1;
         }
     }
     this.patterns = out;
 }
-compare = function(a, b){
-    return a==="." || a===b;
+compare = function(a, b) {
+    return a && b && (a === "." || a === b);
 }
 Machine.prototype.test = function(s) {
     var flag = false,
@@ -60,57 +53,87 @@ Machine.prototype.test = function(s) {
         idx = 0,
         len = list.length,
         pattern,
-        max = s && s.length,
+        max = s ? s.length : 0,
+        // current letter index
         current = 0,
-        backable = 0,
+        // back trace pattern
+        backablePatterns = [],
+        backable = -1,
         val, start;
-    if (max) {
-        while (idx < len) {
-            pattern = list[idx];
-            val = pattern.value;
-            if (pattern.multi) {
-                // multi mode
-                start = current;
-                while (start < max) {
-                    flag = compare(val, s[start]);
-                    if (flag) {
-                        // matched
-                        start++;
-                    } else {
-                        // not match
-                        break;
-                    }
+    while (idx < len) {
+        pattern = list[idx];
+        val = pattern.value;
+        if (pattern.multi) {
+            // multi mode
+            start = current;
+            while (start < max) {
+                flag = compare(val, s[start]);
+                if (flag) {
+                    // matched
+                    start++;
+                } else {
+                    // not match
+                    break;
                 }
-                //backable = current;
-                current = start;    // set current letter index for next loop
-                flag = true;    // multi mode always return true because it can match 0 letter;
+            }
+            // if this pattern matched some word, it can be back trace
+            if (start > current) {
+                backable = backablePatterns.push(idx) - 1;
+            };
+            pattern.start = current; // save first matched letter index
+            pattern.end = start;
+            current = start; // set current letter index for next loop
+            flag = true; // multi mode always return true because it can match 0 letter;
+        } else {
+            // single mode
+
+            // reach end and cannot back trace
+            if (backable < 0 && current === max) {
+                return false
+            }
+            flag = compare(val, s[current]);
+            if (flag) {
+                current++;
             } else {
-                // single mode
-                start = current;
-                // reach end and cannot back trace
-                if(start === backable && current === max){
-                    return false
-                }
-                while(start >= backable){
-                    flag = compare(val, s[start]);
-                    if(flag){
-                        break;
-                    } else {
+                // find previous backable pattern
+                while (backable >= 0) {
+                    // get previous backable pattern's index
+                    idx = backablePatterns[backable];
+                    pattern = list[idx];
+                    if (pattern.start < pattern.end) {
                         // back trace
-                        start--;
+                        current = --pattern.end;
+                        flag = true;
+                        if(pattern.start === pattern.end){
+                            // remove pattern
+                            backablePatterns.length = backable;
+                            backable--;
+                        }
+                        // match again
+                        break;
                     }
                 }
-                if(flag){
-                    backable = current = start + 1;    // set current letter index for next loop
-                }
             }
-            // check match
-            if (!flag) {
-                break;
-            }
-            idx++;
+            // while(start >= backable){
+            //     flag = compare(val, s[start]);
+            //     if(flag){
+            //         break;
+            //     } else {
+            //         // back trace
+            //         start--;
+            //     }
+            // }
+            // if(flag){
+            //     backable = current = start + 1;    // set current letter index for next loop
+            // }
         }
+        // check match
+        if (!flag) {
+            break;
+        }
+        idx++;
     }
+
     return flag && current === max;
 }
 /**
@@ -119,5 +142,9 @@ Machine.prototype.test = function(s) {
  * @return {boolean}
  */
 var isMatch = function(s, p) {
-    return (new Machine(p)).test(s);
+    if(s || p){
+        return (new Machine(p)).test(s);
+    }else{
+        return s === p
+    }
 };

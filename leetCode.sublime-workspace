@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"compare",
+				"compareFn"
+			],
+			[
+				"op",
+				"op+	opacity: $1;\nfilter: alpha(opacity=$2);"
+			],
+			[
+				"tran",
+				"transition	CSS - transition: ;"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"mar",
-				"margin-bottom"
+				"margin"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"bor",
+				"border-radius"
 			],
 			[
 				"in",
@@ -80,10 +104,6 @@
 				"border-color"
 			],
 			[
-				"bor",
-				"border"
-			],
-			[
 				"z",
 				"z-index"
 			],
@@ -106,10 +126,6 @@
 			[
 				"ri",
 				"right"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"over",
@@ -324,10 +340,6 @@
 				"slice-plane"
 			],
 			[
-				"compare",
-				"_compareMethod"
-			],
-			[
 				"au",
 				"auto"
 			],
@@ -460,10 +472,6 @@
 				"slider-list"
 			],
 			[
-				"op",
-				"opacity"
-			],
-			[
 				"slide",
 				"slider-shadow"
 			],
@@ -506,150 +514,21 @@
 			[
 				"bac",
 				"background-color"
-			],
-			[
-				"line",
-				"line-height"
-			],
-			[
-				"outer",
-				"outerHeight	.outerHeight()"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "code/001.Two Sum.js",
+			"file": "code/022.Generate Parentheses.js",
 			"settings":
 			{
-				"buffer_size": 410,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/002.Add Two Numbers.js",
-			"settings":
-			{
-				"buffer_size": 515,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/003.Longest Substring Without Repeating Characters.js",
-			"settings":
-			{
-				"buffer_size": 501,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/004.Median of Two Sorted Arrays.js",
-			"settings":
-			{
-				"buffer_size": 406,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/005.Longest Palindromic Substring.js",
-			"settings":
-			{
-				"buffer_size": 600,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/006.ZigZag Conversion.js",
-			"settings":
-			{
-				"buffer_size": 474,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/007.Reverse Integer.js",
-			"settings":
-			{
-				"buffer_size": 306,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/008.String to Integer (atoi).js",
-			"settings":
-			{
-				"buffer_size": 679,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/009.Palindrome Number.js",
-			"settings":
-			{
-				"buffer_size": 491,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/011.Container With Most Water.js",
-			"settings":
-			{
-				"buffer_size": 707,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/012.Integer to Roman.js",
-			"settings":
-			{
-				"buffer_size": 1455,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/013.Roman to Integer.js",
-			"settings":
-			{
-				"buffer_size": 533,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/014.Longest Common Prefix.js",
-			"settings":
-			{
-				"buffer_size": 575,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/015.3Sum.js",
-			"settings":
-			{
-				"buffer_size": 3373,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "code/016.3Sum Closest.js",
-			"settings":
-			{
-				"buffer_size": 1257,
-				"line_ending": "Windows",
-				"name": "// https://leetcode.com/problems/3sum-closest/"
-			}
-		},
-		{
-			"file": "/E/OneDrive/leetcode/leetCode.js",
-			"settings":
-			{
-				"buffer_size": 12656,
+				"buffer_size": 1409,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"build_system": "Packages/User/javascript_nodeJs.sublime-build",
 	"command_palette":
 	{
 		"height": 392.0,
@@ -658,6 +537,10 @@
 			[
 				"for",
 				"Format: Javascript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
 			],
 			[
 				"ssjs",
@@ -766,10 +649,6 @@
 			[
 				"ssh",
 				"Set Syntax: HTML"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"tid",
@@ -1096,7 +975,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 536.0
 	},
 	"console":
 	{
@@ -1113,6 +992,45 @@
 	},
 	"file_history":
 	[
+		"/E/work_project/GIT/leetCode/code/001.Two Sum.js",
+		"/E/work_project/GIT/leetCode/code/002.Add Two Numbers.js",
+		"/E/work_project/GIT/leetCode/code/004.Median of Two Sorted Arrays.js",
+		"/E/work_project/GIT/leetCode/code/005.Longest Palindromic Substring.js",
+		"/E/work_project/GIT/leetCode/code/006.ZigZag Conversion.js",
+		"/E/work_project/GIT/leetCode/code/007.Reverse Integer.js",
+		"/E/work_project/GIT/leetCode/code/008.String to Integer (atoi).js",
+		"/E/work_project/GIT/leetCode/code/009.Palindrome Number.js",
+		"/E/work_project/GIT/leetCode/code/010.Regular Expression Matching.js",
+		"/E/work_project/GIT/leetCode/code/011.Container With Most Water.js",
+		"/E/work_project/GIT/leetCode/code/012.Integer to Roman.js",
+		"/E/work_project/GIT/leetCode/code/013.Roman to Integer.js",
+		"/E/work_project/GIT/leetCode/code/014.Longest Common Prefix.js",
+		"/E/work_project/GIT/leetCode/code/015.3Sum.js",
+		"/E/work_project/GIT/leetCode/code/017.Letter Combinations of a Phone Number.js",
+		"/E/work_project/GIT/leetCode/code/018.4Sum.js",
+		"/E/work_project/GIT/leetCode/code/019.Remove Nth Node From End of List.js",
+		"/E/work_project/GIT/leetCode/code/020.Valid Parentheses.js",
+		"/E/work_project/GIT/leetCode/code/021.Merge Two Sorted Lists.js",
+		"/E/work_project/GIT/leetCode/code/086.Partition List.js",
+		"/E/work_project/GIT/js-practice/tree.js",
+		"/E/work_project/GIT/js-practice/autoTransform.js",
+		"/E/work_project/GIT/leetCode/test.html",
+		"/E/work_project/GIT/react-demos/demo10/index.html",
+		"/E/work_project/GIT/js-practice/test.html",
+		"/D/soft/Sublime Text 2/Data/Packages/ReactJS/README.md",
+		"/E/work_project/GIT/js-practice/test.js",
+		"/E/work_project/GIT/js-practice/test.md",
+		"/D/soft/Sublime Text 2/Data/Packages/JSLint/JSLint.sublime-settings",
+		"/D/soft/Sublime Text 2/Data/Packages/User/JSLint.sublime-settings",
+		"/D/soft/Sublime Text 2/Data/Packages/User/Preferences.sublime-settings",
+		"/D/soft/Sublime Text 2/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/soft/Sublime Text 2/Data/Packages/JSHint/JSHint.sublime-build",
+		"/D/soft/Sublime Text 2/Data/Packages/User/javascript_nodeJs.sublime-build",
+		"/E/work_project/project/new_casir/B2C_WDQB20150211/B2C_WEB/WebContent/static/inter/modules/flights/tpl.js",
+		"/E/work_project/GIT/leetCode/code/003.Longest Substring Without Repeating Characters.js",
+		"/E/work_project/project/new_casir/B2C_WDQB20150211/B2C_WEB/WebContent/static/inter/modules/flights/tripBlock.js",
+		"/E/work_project/node/ITA/publish/dist/modules/booking/search.js",
+		"/E/OneDrive/leetcode/leetCode.js",
 		"/C/Users/losingword/.gitconfig",
 		"/D/soft/Sublime Text 2/Data/Settings/SideBarEnhancements.json",
 		"/E/work_project/GIT/leetCode/code/001.atoi.js",
@@ -1201,46 +1119,7 @@
 		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/shop/_filter.js",
 		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/shop.js",
 		"/E/work_project/node/ITA/au-bugfix/src/modules/common/addon.js",
-		"/E/work_project/node/ITA/au-dev/src/modules/booking/main.js",
-		"/E/work_project/node/ITA/au-bugfix/src/static/lib/seajs/config.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/tpl/passengers-tpl.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/main/solvePsgNum.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/common/lang/ko/text.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/common/lang/zh/text.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/search.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/main/rule.js",
-		"/E/work_project/node/ITA/au-dev/src/modules/booking/main/rule.js",
-		"/E/work_project/node/ITA/au-bugfix/new/modules/booking/shop.js",
-		"/E/work_project/node/ITA/publish/dist/modules/booking/shop.js",
-		"/C/Users/losingword/Desktop/shop.js",
-		"/C/Users/LOSING~1/AppData/Local/Temp/7zEB136.tmp/sea.js",
-		"/E/work_project/node/ITA/publish/sea.js",
-		"/E/work_project/node/ITA/publish/dist/static/lib/seajs/sea.js",
-		"/E/work_project/node/ITA/publish/login.css",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/common/lang/en/text.js",
-		"/E/work_project/node/ITA/au-bugfix/src/static/css/addon.css",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/order/finder.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/common/validator.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/passengers/contact.js",
-		"/E/work_project/project/new_casir/B2C_LCGB/B2C_WEB/WebContent/static/inter/modules/flights/flights.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/shop/summary.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/main/solveUrl.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/confirmation.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/passengers.js",
-		"/C/Users/losingword/Desktop/dist/static/lib/seajs/sea.js",
-		"/C/Users/losingword/Desktop/dist/version/index.html",
-		"/E/work_project/node/ITA/au-bugfix/src/static/css/touch.css",
-		"/D/soft/Sublime Text 2/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
-		"/E/work_project/node/ITA/au-bugfix/src/static/css/main.css",
-		"/E/work_project/project/new_casir/B2C_LCGB/B2C_WEB/WebContent/static/inter/modules/flights/request.js",
-		"/C/Users/losingword/Desktop/leetcode/test.html",
-		"/C/Users/losingword/Desktop/0.html",
-		"/E/work_project/project/new_casir/B2C_WDQB20150211/B2C_WEB/WebContent/static/inter/modules/planes.js",
-		"/E/work_project/project/new_casir/B2C_WDQB20150211/B2C_WEB/WebContent/static/inter/modules/json.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/booking/payment/showOrder.js",
-		"/E/work_project/node/ITA/au-bugfix/src/modules/common/lang/en/page_config.js",
-		"/E/work_project/node/ITA/au-bugfix/src/static/css/order.css",
-		"/E/work_project/node/ITA/au-dev/src/static/css/booking.css"
+		"/E/work_project/node/ITA/au-dev/src/modules/booking/main.js"
 	],
 	"find":
 	{
@@ -1343,6 +1222,60 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"(()(()))\"",
+			"\"()()(())\"",
+			"\"((()))()\"",
+			"\"(((())))\"",
+			"\"()((()))\"",
+			"\"(())()()\"",
+			"\"((())())\"",
+			"\"()(())()\"",
+			"\"(()()())\"",
+			"\"()()()()\"",
+			"\"(()())()\"",
+			"\"((()()))\"",
+			"\"()(()())\"",
+			"\"()(())()\"",
+			"\"(()()())\"",
+			"\"()()()()\"",
+			"\"(()())()\"",
+			"\"((()()))\"",
+			"\"()(()())\"",
+			"temp",
+			"prev && ",
+			"out",
+			"match",
+			"machine",
+			"backable",
+			"list",
+			"index",
+			"current",
+			"letter",
+			"arr",
+			"closing",
+			"temp",
+			"crt",
+			"len",
+			"sNums",
+			"href=\"",
+			"len-s2/2",
+			"60",
+			"95.35",
+			"24.65",
+			"4",
+			"(len-size/2-size)/2",
+			"len-size/2",
+			"40",
+			"save",
+			"alert",
+			"\"--\"",
+			"item",
+			"tripDetail",
+			"sum",
+			"max",
+			"end",
+			"max",
+			"arr",
 			"sum",
 			"current",
 			"repeat",
@@ -1416,61 +1349,7 @@
 			"fmt",
 			"idDate",
 			"validDate",
-			"isDateEdge",
-			"isDate",
-			"checked",
-			"_reTry",
-			"addListener",
-			"init",
-			"pricing",
-			"EXEC",
-			"dateBar",
-			"minPrice",
-			"MinPrice",
-			"minPrice",
-			"showMinPrc",
-			"showMinprc",
-			"showMinPrc",
-			"minPriceBar",
-			"__initTripInput",
-			"step2",
-			"shadow-bg",
-			"setRadio",
-			"form",
-			"#0093d0",
-			"cfg",
-			"dep",
-			"cfg",
-			"submit",
-			"cookieTemp",
-			"minifyDate",
-			"__getCity",
-			"MIN_DATE",
-			"DATE_EDGE",
-			"multiEdge",
-			"validator",
-			"Validator",
-			"childUnits",
-			"PSG_NUM",
-			"initUnit",
-			"PSG_NUM",
-			"PSG_RATE",
-			"PSG_MAX",
-			"PSG_NUM",
-			"_submitForm",
-			"');\n",
-			"_mapForm",
-			"_startSearch",
-			"_validateForm",
-			"_submitForm",
-			"TripType.toggle",
-			"TripType",
-			".toggle",
-			"toogle",
-			"toggleTripType",
-			"MODE",
-			"__toggleTripType",
-			"bk-form-extra"
+			"isDateEdge"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1616,1125 +1495,29 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "code/001.Two Sum.js",
+					"file": "code/022.Generate Parentheses.js",
 					"settings":
 					{
-						"buffer_size": 410,
+						"buffer_size": 1409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								409,
-								409
+								787,
+								787
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "code/002.Add Two Numbers.js",
-					"settings":
-					{
-						"buffer_size": 515,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								295
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "code/003.Longest Substring Without Repeating Characters.js",
-					"settings":
-					{
-						"buffer_size": 501,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								364,
-								364
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "code/004.Median of Two Sorted Arrays.js",
-					"settings":
-					{
-						"buffer_size": 406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "code/005.Longest Palindromic Substring.js",
-					"settings":
-					{
-						"buffer_size": 600,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								63,
-								63
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "code/006.ZigZag Conversion.js",
-					"settings":
-					{
-						"buffer_size": 474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "code/007.Reverse Integer.js",
-					"settings":
-					{
-						"buffer_size": 306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								306,
-								306
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "code/008.String to Integer (atoi).js",
-					"settings":
-					{
-						"buffer_size": 679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								216,
-								216
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "code/009.Palindrome Number.js",
-					"settings":
-					{
-						"buffer_size": 491,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								491,
-								491
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "code/011.Container With Most Water.js",
-					"settings":
-					{
-						"buffer_size": 707,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								663,
-								663
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "code/012.Integer to Roman.js",
-					"settings":
-					{
-						"buffer_size": 1455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								145,
-								145
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "code/013.Roman to Integer.js",
-					"settings":
-					{
-						"buffer_size": 533,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								276,
-								276
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "code/014.Longest Common Prefix.js",
-					"settings":
-					{
-						"buffer_size": 575,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								575,
-								575
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "code/015.3Sum.js",
-					"settings":
-					{
-						"buffer_size": 3373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2236,
-								2236
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1337.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "code/016.3Sum Closest.js",
-					"settings":
-					{
-						"buffer_size": 1257,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1166,
-								1166
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "// https://leetcode.com/problems/3sum-closest/",
+							"auto_name": "",
 							"bh_regions":
 							[
 								"bh_regex",
@@ -2784,90 +1567,12 @@
 							],
 							"incomplete_sync": null,
 							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/E/OneDrive/leetcode/leetCode.js",
-					"settings":
-					{
-						"buffer_size": 12656,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11471,
-								11471
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 7364.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2908,7 +1613,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 24.0
+		"height": 251.0
 	},
 	"output.sftp":
 	{
@@ -3451,6 +2156,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 198.0,
+	"side_bar_width": 152.0,
 	"status_bar_visible": true
 }
