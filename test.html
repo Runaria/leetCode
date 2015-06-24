@@ -5,6 +5,31 @@
 	<title>Document</title>
 </head>
 <body>
-	<script src="code/022.Generate Parentheses.js"></script>
+	<script src="code/029.Divide Two Integers.js"></script>
+
+    <script>
+        function ListNode(val) {
+            this.val = val;
+            this.next = null;
+        }
+
+        function createListNode(arr) {
+            var prev, curt, item;
+            while(item = arr.pop()){
+                curt = new ListNode(item);
+                curt.next = prev;
+                prev = curt;
+            }
+            return curt
+        }
+        function printListNode(node){
+            var out = [];
+            while(node){
+                out.push(node.val);
+                node = node.next;
+            }
+            console.log(out);
+        }
+    </script>
 </body>
 </html>
