@@ -16,7 +16,7 @@ var divide = function(dividend, divisor) {
     if (divisor === 0) { return MAX_INT }
     if (dividend === 0) {return  0}
     var num, mul, prev,
-        isNeg = false, isReverse = false,
+        isNeg = false, isOverflow = false,
         dend = dividend,
         dsor = divisor,
         remain,
@@ -44,22 +44,22 @@ var divide = function(dividend, divisor) {
     if (dend < dsor) { return 0}
     if (dend === dsor) { return isNeg ? -1 : 1}
     remain = dend;
-    while (remain >= dsor && !isReverse) {
+    while (remain >= dsor && !isOverflow) {
         prev = num = dsor;
         mul = 1;
         while (remain >= num) {
             prev = num;
             num = dsor << mul;
             mul += 1;
-            isReverse = num < 0;
-            if (isReverse) {
+            isOverflow = num < 0;
+            if (isOverflow) {
                 break;
             }
         }
         ret += 1<<(mul-2);
         remain = remain - prev;
     }
-    if (isReverse) {
+    if (isOverflow) {
         mul -= 2;
         num = prev;
         while ( mul >= 0) {
