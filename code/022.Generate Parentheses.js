@@ -17,12 +17,9 @@
 
 // from leetcode
 var generateParenthesis = function(n) {
-    var out = {
-        arr: [],
-        map: {}
-    };
+    var out = [];
     _generator(out, "", n, n);
-    return out.arr;
+    return out;
 },
 _generator = function(out, str, left, right){
     if(left){
@@ -32,9 +29,6 @@ _generator = function(out, str, left, right){
         _generator(out, str+")", left, right-1)
     }
     if(!left && !right){
-        //if(!out.map[str]){
-            out.arr.push(str);
-        //    out.map[str] = 1;
-        //}
+        out.push(str);
     }
 }

@@ -21,5 +21,25 @@ return 1->2->2->4->3->5.*/
  * @return {ListNode}
  */
 var partition = function(head, x) {
-    
+    if (!head) {
+        return null;
+    }
+    var left = new ListNode(0),
+        right = new ListNode(0);
+    var _left = left,
+        _right = right;
+    while (head) {
+        if (head.val < x) {
+            left.next = head;
+            left = head;
+        } else {
+            right.next = head;
+            right = head;
+        }
+        head = head.next;
+    }
+    right.next = null;
+    // link list
+    left.next = _right.next;
+    return _left.next;
 };
