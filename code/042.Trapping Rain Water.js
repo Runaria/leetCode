@@ -14,7 +14,7 @@
  * @param {number[]} height
  * @return {number}
  */
-// passed: 200ms
+// 200ms
 var trap = function(height, added) {
     var count = {};
     var order = [];
@@ -79,7 +79,42 @@ var trap = function(height, added) {
     return list.length > 1 ? trap(list, sum) : sum;
 };
 
-
+// 144ms
+// 148ms
 var trap = function(height) {
-
+    var len = height.length;
+    var sum = 0;
+    if (len < 3) {
+        return sum;
+    }
+    var left = 0,
+        right = len - 1,
+        lv = height[left],
+        rv = height[right],
+        ln, rn,
+        isReverse = lv > rv;
+    while (left < right) {
+        if (isReverse) {
+            // right -> left
+            right--;
+            rn = height[right];
+            if (rn <= rv) {
+                sum += rv - rn;
+            } else {
+                rv = rn;
+                isReverse = lv > rv;
+            }
+        } else {
+            // left -> right
+            left++;
+            ln = height[left];
+            if (ln <= lv) {
+                sum += lv - ln;
+            } else {
+                lv = ln;
+                isReverse = lv > rv;
+            }
+        }
+    }
+    return sum;
 };
